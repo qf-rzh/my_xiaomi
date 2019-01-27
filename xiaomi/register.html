@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/register.css"/>
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+</head>
+<body>
+    <div id="box">
+        <div class="my_xiaomi"><img src="../xiaomi/images/logo-footer.png" alt="" /></div>
+        <h1>注册小米账号</h1>
+        <form id="register" class="case" action="php/register.php" method="POST">
+            <label for="txt">用户名:</label>
+            <input type="text" name="username" id="txt"/>
+            <span class="iconfont icon-roundcheck one"></span>
+            <span class="iconfont icon-roundclosefill item"></span>
+            <br/>
+            <label for="pass">密码:</label>
+            <input type="password" name="password" id="pass" />
+            <span class="iconfont icon-roundcheck two"></span>
+            <span class="iconfont icon-roundclosefill item1"></span>
+            <br/>
+            <label for="user_pass">确认密码:</label>
+            <input type="password" name="user_password" id="user_pass" />
+            <span class="iconfont icon-roundcheck three"></span>
+            <span class="iconfont icon-roundclosefill item2"></span>
+            <br/>
+            <label for="tel">电话号码:</label>
+            <input type="tel" name="teliphone" id="tel" />
+            <span class="iconfont icon-roundcheck four"></span>
+            <span class="iconfont icon-roundclosefill item3"></span>
+            <br/>
+            <input type="submit"  name="submit" class="sub" value="确认提交"/>
+        </form>
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="#">繁体</a> | </li>
+            <li><a href="#">简体</a> | </li>
+            <li><a href="#">English</a> | </li>
+            <li><a href="#">常见问题</a></li>
+        </ul>
+        <p>小米公司版权所有-京ICP备10046444-<span><img src="../xiaomi/images/my_xiaomiicon_03.jpg"/></span>京公网安备11010802020134号-京ICP证110507号</p>
+    </div>
+    <script src="../xiaomi/js/register.js"></script>
+</body>
+</html>
