@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/particulars.css" />
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <script src="../xiaomi/js/jquery-1.12.2.min.js"></script>
+</head>
+<script>
+    $(document).ready(function () {
+        $('#topwrapper').css({
+            'height': '50px',
+            'background': '#333333'
+        });
+        $('.container').css({
+            'width': '1226px',
+            'margin': 'auto'
+        });
+        $('.top').css({
+            'height': '50px',
+            'background': '#333333'
+        });
+        $('.top ul ').css({
+            'width': '200px',
+            'height': '50px',
+            'float': 'right'
+        });
+        $('.top ul li').css({
+            'float': 'left'
+        });
+        $('.top ul').children('li').eq(0).css({
+            'width': '80px',
+            'height': '50px',
+            'line-height': '50px'
+        });
+        $('.top ul').children('li').eq(0).children('a').css({
+            'display': 'block',
+            'font-size': '12px',
+            'color': '#b0b0b0',
+            'text-align': 'center'
+        });
+        $('.top ul').children('li').eq(1).css({
+            'width': '120px',
+            'height': '50px',
+            'line-height': '50px',
+            'background': '#424242',
+            'position': 'relative'
+        });
+        $('.top ul').children('li').eq(1).children('a').css({
+            'display': 'block',
+            'font-size': '12px',
+            'color': '#b0b0b0',
+            'padding-left': '50px',
+            'box-sizing': 'border-box'
+        });
+        $('.top ul').children('li').eq(2).css({
+            'display': 'block',
+            'width': '270px',
+            'height': '122px',
+            'background': 'white',
+            'margin-left': '-70px',
+            'box-shadow': '3px 3px 5px whitesmoke',
+            'position': 'relative',
+            'display': 'none'
+        });
+        $('.top ul').children('li').eq(2).children('span').css({
+            'position': 'absolute',
+            'left': 0,
+            'top': '50%',
+            'font-size': '10px',
+            'text-align': 'center'
+        });
+        $('.top ul').children('li').eq(1).mouseenter(function () {
+            $('.top_item').slideDown('normal');
+            $('.top_item').children('span').css({
+                'display': 'block'
+            });
+        });
+        $('.top ul').children('li').eq(2).mouseleave(function () {
+            $('.top_item').stop(true).slideUp('normal');
+        })
+        $('.top ul').children('li').eq(0).mouseenter(function () {
+            $('.top_item').stop(true).slideUp('normal');
+        });
+        $('#header_wrapper').css({
+            'height': '125px',
+            'background': 'white'
+        });
+        $('.header').css({
+            'height': '125px',
+            'background': 'white'
+        });
+        $('.header_case').css({
+            'display': 'inline-block',
+            'line-height': '125px',
+            'font-size': '16px',
+            'color': 'black',
+            'margin-left': '86px'
+        });
+        $('.header_box').css({
+            'position': 'absolute',
+            'width': '238px',
+            'height': '389px',
+            'border-width': '1px',
+            'border-style': 'solid',
+            'border-color': '#ff6700',
+            'background': 'white',
+            'display': 'none'
+        });
+        $('.header_box li').css({
+            'display': 'flex',
+            'justify-content': 'space-between',
+            'width': '238px',
+            'height': '36px',
+            'padding-left': '28px',
+            'padding-right': '20px',
+            'box-sizing': 'border-box'
+        });
+        $('.header_box li').eq(0).css({
+            'margin-top': '17px'
+        });
+        $('.header_box li span').css({
+            'display': 'inline-block',
+            'font-size': '14px',
+            'color': '#e0e0e0',
+            'line-height': '36px'
+        });
+        $('.header_form').css({
+            'width': '368px',
+            'height': '61px',
+            'float': 'right',
+            'margin-top': '31px',
+            'position': 'relative'
+        });
+        $('.txt').css({
+            'width': '304px',
+            'height': '61px',
+            'border-width': '1px',
+            'border-style': 'solid',
+            'border-color': '#e0e0e0',
+            'border-right': 'none',
+            'float': 'left'
+        });
+        $('.sub').css({
+            'width': '63px',
+            'height': '63px',
+            'border': '1px solid #e0e0e0',
+            'background': 'white',
+            'float': 'left',
+            'cursor': 'pointer'
+        });
+        $('#banner_wrapper').css({
+            'height': '700px',
+            'background': 'white',
+            'overflow': 'hidden',
+            'position': 'relative'
+        });
+        $('#main_wrapper').css({
+            'min-height': '644px',
+            'background': '#f5f5f5'
+        });
+        $('.main').css({
+            'min-height': '644px',
+            'background': '#f5f5f5',
+            'overflow': 'hidden'
+        });
+        $('.main h2').css({
+            'font-size': '24px',
+            'margin-top': '30px',
+            'margin-bottom': '12px'
+        });
+        // $('.main_case').css({
+        //     'height':'544px',
+        //     'width':'1226px',
+        //     'margin-top':'25px'
+        // });
+        $('.main_case img').css({
+            'width': '900px',
+            'height': '544px',
+            'float': 'left',
+            'cursor': 'pointer'
+        });
+        $('.main_item').css({
+            'width': '326px',
+            'height': '544px',
+            'float': 'left',
+            'overflow': 'hidden',
+            'background': 'white',
+            'padding-left': '78px',
+            'box-sizing': 'border-box'
+        });
+        $('.main_item h2').css({
+            'font-size': '32px',
+            'color': '#474747',
+            'margin-top': '90px',
+            'cursor': 'pointer'
+        });
+        $('.main_item p').css({
+            'font-size': '12px',
+            'color': '#707070',
+            'line-height': '34px'
+        });
+        $('.main_item p').eq(1).css({
+            'font-size': '30px',
+            'color': '#ff6718',
+            'margin-top': '55px'
+        });
+        $('.main_item p i').css({
+            'display': 'inline-block',
+            'font-size': '14px'
+        });
+        $('.main_item p span').css({
+            'display': 'inline-block',
+            'font-size': '14px',
+            'color': '#858585',
+            'padding-left': '12px',
+            'box-sizing': 'border-box'
+        });
+        $('.main_item a').css({
+            'display': 'block',
+            'font-size': '16px',
+            'color': '#707070',
+            'margin-top': '150px'
+        });
+        $('.main .main_box').eq(0).css('margin-top','12px');
+        $('.main_box').css({
+            'width': '1226px',
+            'height': '603px',
+            'margin-bottom': '12px',
+            'display': 'flex',
+            'justify-content': 'space-between'
+        });
+        $('#footer_wrapper').css({
+            'height': '340px',
+            'background': 'white'
+        });
+        $('.footer').css({
+            'height': '340px',
+            'background': 'white'
+        });
+        $('.footer_case').css({
+            'width': '1226px',
+            'height': '98px',
+            'border-bottom': '1px solid #e0e0e0'
+        });
+        $('.footer_box').css({
+            'width':'1226',
+            'height':'144px',
+            'margin-top':'45px'
+        });
+        $('.footer_left').css({
+            'float':'left',
+            'width':'979px',
+            'height':'144px',
+            'border-right':'1px solid #e0e0e0'
+        });
+        $('.footer_right').css({
+            'float':'right',
+            'width':'244px',
+            'height':'144px'
+        });
+        $('.footer_right h3').css({
+            'text-align':'center',
+            'font-size':'20px',
+            'color':'#ff6700'
+        });
+        $('.footer_right p').css({
+            'font-size':'12px',
+            'color':'#616161',
+            'text-align':'center',
+            'margin-top':'5px'
+        });
+        $('#copy_wrapper').css({
+            'height':'268px',
+            'background':'#fafafa'
+        });
+        $('.copy').css({
+            'height': '268px',
+            'background': '#fafafa'
+        });
+    });
+</script>
+
+<body>
+    <div id="topwrapper">
+        <div class="top container">
+            <ul style="z-index:1;">
+                <li><a href="#">消息通知</a></li>
+                <li class="top_case">
+                    <span></span>
+                    <a href="#">购物车 (0)</a>
+                </li>
+                <li class="top_item"><span>购物车中还没有商品，赶紧选购吧！</span></li>
+            </ul>
+        </div>
+    </div>
+    <div id="header_wrapper">
+        <div class="header container">
+            <div class="logo">
+                <h1>
+                    <a href="#" title="小米">小米</a>
+                </h1>
+            </div>
+            <a href="#" class="header_case"> 全部商品分类</a>
+            <ul class="header_box" style="z-index:5;">
+                <li><a href="#">手机 电话卡</a><span>&gt;</span></li>
+                <li><a href="#">电视 盒子</a><span>&gt;</span></li>
+                <li><a href="#">笔记本 平板</a><span>&gt;</span></li>
+                <li><a href="#">家电 插线板</a><span>&gt;</span></li>
+                <li><a href="#">出行 穿戴</a><span>&gt;</span></li>
+                <li><a href="#">智能 路由器</a><span>&gt;</span></li>
+                <li><a href="#">电源 配件</a><span>&gt;</span></li>
+                <li><a href="#">健康 儿童</a><span>&gt;</span></li>
+                <li><a href="#">耳机 音箱</a><span>&gt;</span></li>
+                <li><a href="#">生活 钱包</a><span>&gt;</span></li>
+            </ul>
+            <form class="header_form">
+                <input type="text" class="txt" />
+                <ul class="header_item" style="z-index:5;">
+                    <!-- <li><a href="#">小米6X</a></li>
+                    <li><a href="#">小米MIX 2S</a></li>
+                    <li><a href="#">黑沙游戏手机</a></li>
+                    <li><a href="#">红米Note 5</a></li>
+                    <li><a href="#">红米5A</a></li>
+                    <li><a href="#">小米电视4C</a></li>
+                    <li><a href="#">电视32英寸</a></li>
+                    <li><a href="#">笔记本pro</a></li>
+                    <li><a href="#">空气净化器</a></li>
+                    <li><a href="#">净水器</a></li> -->
+                </ul>
+                <i class="header_rzh">小米8</i>
+                <i class="header_xwy">小米MIX 2S</i>
+                <input type="submit" class="sub" value="" />
+                <span class="iconfont icon-search"></span>
+            </form>
+        </div>
+    </div>
+    <div id="banner_wrapper">
+        <ul class="banner_case">
+            <li style="z-index:2;"><img src="../xiaomi/images/icon10.jpg" /></li>
+            <li style="z-index:1;"><img src="../xiaomi/images/icon11.jpg" /></li>
+        </ul>
+        <ol class="banner_box" style="z-index:2;">
+            <li class="runing"></li>
+            <li></li>
+        </ol>
+        <span class="banner_item one" style="z-index:4;"></span>
+        <span class="banner_item two" style="z-index:4;"></span>
+        <span class="banner_item three" style="z-index:3;"></span>
+        <span class="banner_item four" style="z-index:3;"></span>
+    </div>
+    <div id="main_wrapper">
+        <div class="main container">
+            <h2>明星产品</h2>
+            <div class="main_case">
+                <img src="../xiaomi/images/font_03.jpg" />
+                <div class="main_item">
+                    <h2>小米 青春版</h2>
+                    <p>潮流镜面渐变色，2400万自拍旗舰</p>
+                    <p>1299<i>元起</i><span>1399元</span></p>
+                    <a href="#">了解产品&gt;</a>
+                </div>
+            </div>
+            <div class="main_box">
+                <div class="main_one">
+                    <img src="../xiaomi/images/font_06.jpg" />
+                    <div class="main_three">
+                        <h3>小米8</h3>
+                        <p><i>相机全新升级，骁龙845</i><span>2299<strong>元起</strong> <b>2699元</b></span></p>
+                    </div>
+                </div>
+                <div class="main_two">
+                    <img src="../xiaomi/images/font_06.jpg" />
+                    <div class="main_flex">
+                        <h3>小米8 SE</h3>
+                        <p><i>三星AMOLED全面屏</i><span>1699<strong>元起</strong> <b>1999元</b></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="main_box">
+                <div class="main_one">
+                    <img src="../xiaomi/images/font_06.jpg" />
+                    <div class="main_three">
+                        <h3>红米6</h3>
+                        <p><i>小屏高性能的双摄手机</i><span>729<strong>元起</strong> <b>799元</b></span></p>
+                    </div>
+                </div>
+                <div class="main_two">
+                    <img src="../xiaomi/images/font_06.jpg" />
+                    <div class="main_flex">
+                        <h3>红米 6A</h3>
+                        <p><i>好用好看不贵</i><span>549<strong>元起</strong> <b>599元</b></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="main_box">
+                <div class="main_one">
+                    <img src="../xiaomi/images/font_06.jpg" />
+                    <div class="main_three">
+                        <h3>黑沙游戏手机 Helo</h3>
+                        <p><i>双液冷，更能打</i><span>2999<strong>元起</strong> <b>3199元</b></span></p>
+                    </div>
+                </div>
+                <div class="main_two">
+                    <img src="../xiaomi/images/font_06.jpg" />
+                    <div class="main_flex">
+                        <h3>小米MIX 2S</h3>
+                        <p><i>陶瓷机身 手机中的艺术品</i><span>2399<strong>元起</strong> <b>3299元</b></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="main_box">
+                <div class="main_one">
+                    <img src="../xiaomi/images/font_06.jpg" />
+                    <div class="main_three">
+                        <h3>小米8 青春版</h3>
+                        <p><i>潮流镜面渐变色，自拍旗舰</i><span>1299<strong>元起</strong> <b>1399元</b></span></p>
+                    </div>
+                </div>
+                <div class="main_two">
+                    <img src="../xiaomi/images/font_06.jpg" />
+                    <div class="main_flex">
+                        <h3>小米MIX 3</h3>
+                        <p><i>磁动力滑盖全面屏</i><span>3299<strong>元起</strong> <b></b></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="main_box">
+                <div class="main_one">
+                    <img src="../xiaomi/images/font_06.jpg" />
+                    <div class="main_three">
+                        <h3>小米8</h3>
+                        <p><i>相机全新升级，骁龙845</i><span>2299<strong>元起</strong> <b>2699元</b></span></p>
+                    </div>
+                </div>
+                <div class="main_two">
+                    <img src="../xiaomi/images/font_06.jpg" />
+                    <div class="main_flex">
+                        <h3>小米8 SE</h3>
+                        <p><i>三星AMOLED全面屏</i><span>1699<strong>元起</strong> <b>1999元</b></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="main_box">
+                <div class="main_one">
+                    <img src="../xiaomi/images/font_06.jpg" />
+                    <div class="main_three">
+                        <h3>小米6X</h3>
+                        <p><i>轻薄美观的拍照手机</i><span>1199 <strong>元起</strong> <b>1599元</b></span></p>
+                    </div>
+                </div>
+                <div class="main_two">
+                    <img src="../xiaomi/images/font_06.jpg" />
+                    <div class="main_flex">
+                        <h3>小米MIX 2S</h3>
+                        <p><i>陶瓷机身 手机中的艺术品</i><span>2399<strong>元起</strong> <b>3299元</b></span></p>
+                    </div>
+                </div>
+            </div>
+            <h2>红米手机</h2>
+            <div class="main_box">
+                <div class="main_one">
+                    <img src="../xiaomi/images/font_06.jpg" />
+                    <div class="main_three">
+                        <h3>红米6</h3>
+                        <p><i>轻薄美观的拍照手机</i><span>729<strong>元起</strong> <b>799元</b></span></p>
+                    </div>
+                </div>
+                <div class="main_two">
+                    <img src="../xiaomi/images/font_06.jpg" />
+                    <div class="main_flex">
+                        <h3>红米 6A</h3>
+                        <p><i>好用好看不贵</i><span>549<strong>元起</strong> <b>599元</b></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="main_box">
+                <div class="main_one main_wo">
+                    <img src="../xiaomi/images/font_06.jpg" />
+                    <div class="main_three">
+                        <h3>红米Note 5</h3>
+                        <p><i>红米国民品质，拍照专家</i><span>839<strong>元起</strong> <b>1099元</b></span></p>
+                    </div>
+                </div>
+                <div class="main_two">
+                    <img src="../xiaomi/images/font_06.jpg" />
+                    <div class="main_flex">
+                        <h3>红米6 Pro</h3>
+                        <p><i>高颜值大电量 红米旗舰</i><span>1029<strong>元起</strong> <b>1299元</b></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer_wrapper">
+        <div class="footer container">
+            <div class="footer_case">
+                <ul>
+                    <li>
+                        <span class="iconfont icon-deletefill"></span>
+                        <a href="#">预约维修服务</a>
+                    </li>
+                    <li></li>
+                    <li class="footer_one">
+                        <span class="iconfont icon-deletefill"></span>
+                        <a href="#">7天无理由退货</a>
+                    </li>
+                    <li></li>
+                    <li class="footer_two">
+                        <span class="iconfont icon-deletefill"></span>
+                        <a href="#">15天免费换货</a>
+                    </li>
+                    <li></li>
+                    <li class="footer_three">
+                        <span class="iconfont icon-deletefill"></span>
+                        <a href="#">满150元包邮</a>
+                    </li>
+                    <li></li>
+                    <li>
+                        <span class="iconfont icon-deletefill"></span>
+                        <a href="#">520余家售后网点</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_box">
+                <div class="footer_left">
+                   <dl class="footer_item">
+                       <dt>帮助中心</dt>
+                       <dd>账户管理</dd>
+                       <dd>购物指南</dd>
+                       <dd>订单操作</dd>
+                   </dl>
+                   <dl class="footer_item1">
+                       <dt>服务支持</dt>
+                       <dd>售后服务</dd>
+                       <dd>自动服务</dd>
+                       <dd>相关下载</dd>
+                   </dl>
+                    <dl class="footer_item2">
+                        <dt>线下门店</dt>
+                        <dd>小米之家</dd>
+                        <dd>服务网点</dd>
+                        <dd>授权体验店</dd>
+                    </dl>
+                    <dl class="footer_item3">
+                        <dt>关于小米</dt>
+                        <dd>了解小米</dd>
+                        <dd>加入小米</dd>
+                        <dd>投资者关系</dd>
+                    </dl>
+                    <dl class="footer_item4">
+                        <dt>关注我们</dt>
+                        <dd>新浪微博</dd>
+                        <dd>官方微信</dd>
+                        <dd>联系我们</dd>
+                    </dl>
+                    <dl class="footer_item5">
+                        <dt>特色服务</dt>
+                        <dd>F 码通道</dd>
+                        <dd>礼物码</dd>
+                        <dd>防伪查询</dd>
+                    </dl>
+                </div>
+                <div class="footer_right">
+                     <h3>400-100-5678</h3>
+                     <p>周一至周日 8:00-18:00</p>
+                     <p>（仅收市话费）</p>
+                     <a href="#"><span class="iconfont icon-deletefill"></span>联系客服</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="copy_wrapper">
+        <div class="copy container">
+            <div class="footer_logo"></div>
+            <ul class="footer_ul">
+                <li>小米商城 <span>|</span></li>
+                <li>MIUI <span>|</span></li>
+                <li>米家 <span>|</span></li>
+                <li>米聊 <span>|</span></li>
+                <li>多看 <span>|</span></li>
+                <li>游戏 <span>|</span></li>
+                <li>路由器 <span>|</span></li>
+                <li>米粉卡 <span>|</span></li>
+                <li>政企服务 <span>|</span></li>
+                <li>小米天猫店 <span>|</span></li>
+                <li>隐私政策 <span>|</span></li>
+                <li>商城用户协议 <span>|</span></li>
+                <li>账号协议 <span>|</span></li>
+                <li>问题反馈 <span>|</span></li>
+                <li>廉正举报 <span>|</span></li>
+                <li>诚信合规 <span>|</span></li>
+                <li>Select Region</li>
+            </ul>
+            <p class="copy_item">© <span>mi.com</span> 京ICP证110507号 <span>京ICP备10046444号</span> <span>京公网安备11010802020134号</span> <span>京网文[2017]1530-131号</span></p>
+            <p class="copy_case"><span>（京）网械平台备字（2018）第00005号</span> <span>互联网药品信息服务资格证 (京) -非经营性-2014-0090</span> <span>营业执照</span> <span>医疗器械公告</span></p>
+            <p class="copy_box"><span>增值电信业务许可证</span> 网络食品经营备案（京）【2018】WLSPJYBAHF-12 <span>食品经营许可证</span></p>
+            <p class="copy_keep">违法和不良信息举报电话：185-0130-1238 <span>知识产权侵权投诉</span> 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</p>
+            <ul class="copy_ul">
+                <li><img src="../xiaomi/images/keep_07.jpg"/></li>
+                <li><img src="../xiaomi/images/keep_09.jpg" /></li>
+                <li><img src="../xiaomi/images/keep_11.jpg" /></li>
+                <li><img src="../xiaomi/images/keep_13.jpg" /></li>
+                <li><img src="../xiaomi/images/keep_15.jpg" /></li>
+            </ul>
+            <p class="copy_right">探索黑科技, 小米为发烧而生!</p>
+        </div>
+    </div>
+    <script src="../xiaomi/js/JsRZh.js"></script>
+    <script src="../xiaomi/js/particulars.js"></script>
+    <script src="../xiaomi/js/move.0.4.0.js"></script>
+</body>
+
+</html>

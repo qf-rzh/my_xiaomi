@@ -124,6 +124,9 @@ body,html{
     color: #757575;
      margin: 0 13px;
 }
+.footer ul li a:hover{
+    color:  #333333;
+}
 .footer p{
     text-align: center;
     margin-top: -20px;

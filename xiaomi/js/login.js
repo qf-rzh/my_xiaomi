@@ -55,7 +55,7 @@ var login = (function () {
                         if (code == 200) {
                             // var username = _data.name;
                             localStorage.name = _data.name;
-                            location.href = 'manager.html';
+                            location.href = 'login.html';
                         } else {
                             alert(msg);
                         }
