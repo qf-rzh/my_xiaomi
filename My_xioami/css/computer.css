@@ -1,27 +1,27 @@
 /* 详情页computer */
+
 /* header */
+
 .head{
     width: 100%;
     position: fixed;
     top: 0;
     overflow: hidden;
 }
-#header-wrapper{
+#newheader-wrapper{
     background: #fff;
-    /* position: fixed;
     width: 100%;
-    top: 0;
-    overflow: hidden; */
+    z-index: 11;
 }
-.header{
+.newHeader{
     display: flex;
     justify-content: space-between;
     background: #fff;
+    border-top: 1px solid #e0e0e0;
 }
 .headL{
     display: flex;
     height: 64px;
-    border-top: 1px solid #e0e0e0;
     box-sizing: border-box;
     font-size: 12px;
     color: #616161;
@@ -450,7 +450,7 @@
 }
 .lastT{
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .lastL h3{
     font-size: 22px;
