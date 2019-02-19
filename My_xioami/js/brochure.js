@@ -46,7 +46,7 @@ $menu.mouseleave(function () {
     $me.css("background", "");
 });
 
-var $box = (function(){
+var $box = (function () {
     var $case_box = document.querySelector('.case_box3');
     var $firstbox = $case_box.firstElementChild;
     var $twobox = $firstbox.nextElementSibling;
@@ -65,10 +65,19 @@ var $box = (function(){
     var imgList = document.querySelectorAll('.swiper-wrapper img');
     var $swiper = document.querySelector('.swiper-container');
     var $a = document.querySelector('.case_box5').firstElementChild;
-    var $ban = 'i5 4G 128G SATA+1TB MX110';  
-    //  console.log($a);
-    
-    return{
+    var $ban = 'i5 4G 128G SATA+1TB MX110';
+    var $none = document.querySelector('.none ul').lastElementChild;
+    var $li = $none.lastElementChild;
+    var $scorll = document.querySelector('#rzh_wrapper');
+    var $i = document.querySelector('.case_box4').lastElementChild;
+    var $p = document.querySelector('.case_box4').firstElementChild;
+    var $iAll = $i.firstElementChild;
+    var $pAll = $p.firstElementChild;
+    var $iAll2 = $p.lastElementChild;
+    var $h4 = document.querySelector('.case_box3 h4').firstElementChild;
+    console.log($h4);
+
+    return {
         init() {
             this.event();
             this.insertData();
@@ -82,10 +91,19 @@ var $box = (function(){
                 $twofirstspan.style.color = '#ff6700';
                 $fivebox.style.borderColor = '#e0e0e0';
                 $fivefirstspan.style.color = '#333333';
+                $fourbox.style.borderColor = '#ff6700';
+                $fourfirstspan.style.color = '#ff6700';
+                $fourlastspan.style.color = '#ff6700';
+                $lastbox.style.borderColor = '#e0e0e0';
+                $lastspan.style.color = '#333333';
                 $lastbox.style.display = 'none';
                 $rzh.innerHTML = '3899元';
                 $xwy.innerHTML = '4199元';
+                $iAll.innerHTML = '3899元';
                 $ban = $twofirstspan.innerHTML;
+                $pAll.innerHTML = $twofirstspan.innerHTML;
+                $iAll2.innerHTML = '3899元';
+                $h4.innerHTML = '1';
             }
             $threebox.onclick = function () {
                 $threebox.style.borderColor = '#ff6700';
@@ -95,10 +113,18 @@ var $box = (function(){
                 $fivebox.style.borderColor = '#e0e0e0';
                 $fivefirstspan.style.color = '#333333';
                 $lastbox.style.display = 'inline-block';
+                $fourbox.style.borderColor = '#ff6700';
+                $fourfirstspan.style.color = '#ff6700';
+                $fourlastspan.style.color = '#ff6700';
+                $lastbox.style.borderColor = '#e0e0e0';
+                $lastspan.style.color = '#333333';
                 $rzh.innerHTML = '4199元';
                 $xwy.innerHTML = '4499元';
+                $iAll.innerHTML = '4199元';
                 $ban = $threefirstspan.innerHTML;
-                
+                $pAll.innerHTML = $threefirstspan.innerHTML;
+                $iAll2.innerHTML = '4199元';
+                $h4.innerHTML = '1';
             }
             $fivebox.onclick = function () {
                 $threebox.style.borderColor = '#e0e0e0';
@@ -107,10 +133,19 @@ var $box = (function(){
                 $twofirstspan.style.color = '#333333';
                 $fivebox.style.borderColor = '#ff6700';
                 $fivefirstspan.style.color = '#ff6700';
+                $fourbox.style.borderColor = '#ff6700';
+                $fourfirstspan.style.color = '#ff6700';
+                $fourlastspan.style.color = '#ff6700';
                 $lastbox.style.display = 'none';
-                $rzh.innerHTML = '4979元';
+                $lastbox.style.borderColor = '#e0e0e0';
+                $lastspan.style.color = '#333333';
+                $rzh.innerHTML = '4799元';
                 $xwy.innerHTML = '4999元';
+                $iAll.innerHTML = '4799元';
                 $ban = $fivefirstspan.innerHTML;
+                $pAll.innerHTML = $fivefirstspan.innerHTML;
+                $iAll2.innerHTML = '4799元';
+                $h4.innerHTML = '1';
             }
             $lastbox.onclick = function () {
                 $fourbox.style.borderColor = '#e0e0e0';
@@ -118,58 +153,80 @@ var $box = (function(){
                 $fourlastspan.style.color = '#333333';
                 $lastbox.style.borderColor = '#ff6700';
                 $lastspan.style.color = '#ff6700';
-                for(var i = 0;i<imgList.length;i++){
-                    imgList[i].src = "images/item_case"+[i]+".jpg";
-                 }
+                for (var i = 0; i < imgList.length; i++) {
+                    imgList[i].src = "images/item_case" + [i] + ".jpg";
+                }
                 $rzh.innerHTML = '4399元';
                 $xwy.innerHTML = '4599元';
-            }
-            $fourbox.onclick = function () {
-                $fourbox.style.borderColor = '#ff6700';
-                $fourfirstspan.style.color = '#ff6700';
-                $fourlastspan.style.color = '#ff6700';
-                $lastbox.style.borderColor = '#e0e0e0';
-                $lastspan.style.color = '#333333';
-                for (var i = 0; i < imgList.length; i++) {
-                    imgList[i].src = "images/brochure_icon" + [i] + ".jpg";
+                $iAll.innerHTML = '4599元';
+                $pAll.innerHTML = '15.6"笔记本 i5 8G MX110 白色';
+                $iAll2.innerHTML = '4599元';
+                $h4.innerHTML = '2';
+                $fourbox.onclick = function () {
+                    $fourbox.style.borderColor = '#ff6700';
+                    $fourfirstspan.style.color = '#ff6700';
+                    $fourlastspan.style.color = '#ff6700';
+                    $lastbox.style.borderColor = '#e0e0e0';
+                    $lastspan.style.color = '#333333';
+                    for (var i = 0; i < imgList.length; i++) {
+                        imgList[i].src = "images/brochure_icon" + [i] + ".jpg";
+                    }
+                    $rzh.innerHTML = '4199元';
+                    $xwy.innerHTML = '4499元';
+                    $iAll.innerHTML = '4199元';
+                    $pAll.innerHTML = '15.6"笔记本 i7 8G MX110 深空灰';
+                    $iAll2.innerHTML = '4199元';
+                    $h4.innerHTML = '1';
                 }
-                $rzh.innerHTML = '4199元';
-                $xwy.innerHTML = '4499元';
             }
-           $a.onclick = function () {
-               console.log($ban);
-               sendAjax('php/cart.php',{
-                    type:'POST',
-                    data:{
-                        "versions":$ban 
-                    },
-                   success(data) {
-                       console.log(data);
-                    //    let { code, msg, data: _data } = JSON.parse(data);
-                    //    if (code == 200) {
-                    //        console.log(1);
-                    //    } else {
-                    //    }
-                   }
-               });
-           } 
-            
+            $li.onclick = function () {
+                $li.style.display = 'none';
+            }
+            $a.onclick = function () {
+                console.log($ban);
+                var json = {"versions": $ban};
+                sendAjax('php/cart.php', {
+                    type: 'POST',
+                    data: json = JSON.stringify(json),
+                    success(data) {
+                        console.log(data);
+                        var data = JSON.parse(data);
+                        var data = data.data;
+                        var $id = data.id;
+                        localStorage.setItem($id,$id);
+                    }
+                });
+            }
+
         },
         insertData() {
             var _this = this;
-            document.body.onscroll = function () {                
-                var $yes = document.documentElement.scrollTop || document.body.scrollTop;  
-                if ($yes>220 && $yes<600) {
-                    $swiper.style.top = $yes -30 + 'px';
+            document.body.onscroll = function () {
+                var $yes = document.documentElement.scrollTop || document.body.scrollTop;
+                if ($yes > 240 && $yes < 600) {
+                    $swiper.style.top = $yes - 30 + 'px';
                 }
-                if($yes>600){
+                if ($yes > 600) {
                     $swiper.style.top = 600 - 30 + 'px';
                 }
-                if($yes < 240){
-                    $swiper.style.top  = 200 + 'px';
-                }          
+                if ($yes < 240) {
+                    $swiper.style.top = 200 + 'px';
+                }
+                if ($yes > 140) {
+                    $scorll.style.position = 'fixed';
+                    $scorll.style.top = window.innerHeight - 760 + 'px';
+                    $scorll.style.zIndex = 999;
+                    // $scorll.style.display = 'block';
+                    // move($scorll, 'height', 79, 3000);
+                }
+                // else{
+                //     $scorll.style.position = 'absolute';
+                //     $scorll.style.top = 140 + 'px';
+                //     $scorll.style.zIndex = 1;
+                // }
                 // console.dir($yes);
             }
+
         }
     }
 }())

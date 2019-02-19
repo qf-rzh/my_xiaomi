@@ -4,8 +4,7 @@ var swiper = (function () {
     var $click = $_ol.children;
     var $ulli = document.querySelector("#_ul").children;
     var $olli = document.querySelector('#_ol').children;
-    var $evaluate = document.querySelector(".evaluate");
-    // console.log($click);
+    console.log($click);
     var timer = 0;
     var index = 0;
     for (let i = 0; i < $click.length; i++) {
@@ -17,7 +16,6 @@ var swiper = (function () {
             // this.shadow();
             this.li_click();
             // this.autoPlay();
-            // this.evaluate();
         },
         event() {
             var _this = this;
@@ -31,7 +29,7 @@ var swiper = (function () {
                 var date = new Date();
                 var now = date.getTime();
                 //设置截止时间
-                var str = "2019-3-12 0:00:00";
+                var str = "2019-2-12 0:00:00";
                 var endDate = new Date(str);
                 var end = endDate.getTime();//返回格林威治到结束时间的毫秒数
                 //时间差
@@ -121,17 +119,6 @@ var swiper = (function () {
         //         _this.showImage();
         //     }, 1000)
         // }
-
-        // evaluate(){
-        //     var $shoujiLi = document.querySelectorAll(".shouji_wrapper ul li");
-        //     // console.log( $shoujiLi);
-        //     $shoujiLi.onmouseenter = function(){
-        //         console.log(11111);
-        //         $evaluate.move($evaluate,opcity,1,time = 200);
-        //         $evaluate.move($evaluate,bottom,0,time = 200);
-        //     }
-        // }
-        
     }
 
 }())

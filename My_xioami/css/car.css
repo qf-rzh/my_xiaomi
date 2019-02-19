@@ -39,12 +39,14 @@
 .main{
     min-height: 505px;
     background: #f7f7f7;
+    overflow: hidden;
 }
 .one{
     width: 100%;
     height: 505px;
     background: #f7f7f7 url(../images/carbg.png) no-repeat 130px center;
     position: relative;
+    display: none;
 }
 .box{
     position: absolute;
@@ -77,6 +79,140 @@
 .box a:last-child{
     background: white;
     color: #ff6700;
+}
+.three{
+    width: 100%;
+    max-height: 505px;
+    background: #f7f7f7;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    /* display: none; */
+}
+.main-header{
+    background: #fff;
+    border-bottom: 2px solid #f7f7f7;
+    height: 70px;
+    line-height: 70px;
+}
+.main-body{
+    background: #fff;
+    border-bottom: 2px solid #f7f7f7;
+    height: 86px;
+    line-height: 86px;
+    padding: 15px 26px 15px 0;
+}
+.three .main-body:nth-last-child(2){
+    margin-bottom: 20px;
+}
+.two{
+    float: left;
+    text-align: center;
+}
+.two-check{
+    width: 110px;
+
+    /* height: 86px; */
+}
+.main-body .two-check{
+    height: 86px;
+}
+.two-img{
+    width: 120px;
+}
+.two-name{
+    width: 380px;
+}
+.two-price{
+    width:159px;
+}
+.two-num{
+    width: 150px;
+    position: relative;
+}
+.change{
+    width: 148px;
+    height: 38px;
+    border: 1px solid #757575;
+    position: relative;
+    margin-top: 23px;
+}
+.change input{
+    position: absolute;
+    left: 38px;
+    height: 0;
+    width: 72px;
+    height: 38px;
+    border: none;
+    text-align: center;
+}
+.change i{
+    position: absolute;
+    top: 0;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    cursor: pointer;
+}
+.change i:hover{
+    background: #c5c5c5;
+}
+.change i:first-of-type{
+    left: 0;
+}
+.change i:last-of-type{
+    right: 0;
+}
+.two-total{
+    width: 201px;   
+}
+.main-body .two-total{
+    color: #ff6700;
+}
+.two-action{
+    width: 80px;
+}
+.jie{
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+    padding-left: 30px;
+}
+.jie-left{
+    float: left;
+}
+.jie-left a{
+    color:#757575;
+    font-size: 12px;
+}
+.jie-left span{
+    font-size: 12px; 
+    color: #757575;
+    margin-left: 35px;
+}
+.jie-left i{
+    color:#ff6700;
+    margin: 0 5px;
+}
+.jie-right{
+    /* width: 390px; */
+    float: right;
+}
+.jie-right span{
+    color: #ff6700;
+}
+.jie-right span i{
+    font-size: 30px;
+}
+.jie-right a{
+    float: right;
+    width: 200px;
+    height: 48px;
+    text-align: center;
+    color: #fff;
+    background: #ff6700;
+    margin-left: 50px;
 }
 .list{
     position: relative;

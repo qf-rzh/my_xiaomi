@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/car.css">
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <script src="js/jquery-3.3.1.js"></script>
 </head>
 
 <body>
@@ -30,6 +32,55 @@
                     <span>登陆后将显示您之前加入的商品</span>
                     <a href="login.html">立即登陆</a>
                     <a href="particulars.html">马上去购物</a>
+                </div>
+            </div>
+            <div class="three">
+                <div class="main-header clearfix">
+                    <div class="two two-check"><i style="display:inline-block" class="iconfont icon-roundcheckfill"></i>全选</div>
+                    <div class="two two-img">&nbsp;</div>
+                    <div class="two two-name">商品名称</div>
+                    <div class="two two-price">单价</div>
+                    <div class="two two-num">数量</div>
+                    <div class="two two-total">小计</div>
+                    <div class="two two-action">操作</div>
+                </div>
+                <!-- <div class="main-body clearfix">
+                    <div class="two two-check"><i class="iconfont icon-check"></i></div>
+                    <div class="two two-img"><img src="images/carbjb.jpg"></div>
+                    <div class="two two-name">15.6"笔记本 i5 4G MX110</div>
+                    <div class="two two-price">3899元</div>
+                    <div class="two two-num">
+                        <div class="change">
+                            <i class="iconfont icon-back"></i><input type="text" value="1">
+                            <i class="iconfont icon-add"></i>
+                        </div>
+                    </div>
+                    <div class="two two-total">3899元</div>
+                    <div class="two two-action"><i class="iconfont icon-roundclose"></i></div>
+                </div> -->
+                <!-- <div class="main-body clearfix">
+                    <div class="two two-check"><i class="iconfont icon-roundclosefill"></i></div>
+                    <div class="two two-img"><img src="images/carbjb.jpg"></div>
+                    <div class="two two-name">15.6"笔记本 i5 4G MX110</div>
+                    <div class="two two-price">3899元</div>
+                    <div class="two two-num">
+                        <div class="change">
+                            <i class="iconfont icon-back"></i><input type="text" value="1">
+                            <i class="iconfont icon-add"></i>
+                        </div>
+                    </div>
+                    <div class="two two-total">3899元</div>
+                    <div class="two two-action"><i class="iconfont icon-roundclose"></i></div>
+                </div> -->
+                <div class="jie clearfix">
+                    <div class="jie-left">
+                        <a href="particulars.html">继续购物</a>
+                        <span>共<i>0</i>件商品，已选择<i>0</i>件</span>
+                    </div>
+                    <div class="jie-right">
+                        <span>合计：<i>0</i>元</span>
+                        <a href="#">去结算</a>
+                    </div>
                 </div>
             </div>
             <div class="list">
@@ -199,6 +250,7 @@
             </div>
         </div>
     </div>
+    <!-- 底部开始 -->
     <div id="footer_wrapper">
         <div class="footer container">
             <div class="footer_case">
@@ -315,6 +367,8 @@
             <p class="copy_right">探索黑科技, 小米为发烧而生!</p>
         </div>
     </div>
+    <script src="js/ajax.js"></script>
+    <script src="js/car.js"></script>
 </body>
 
 </html>
