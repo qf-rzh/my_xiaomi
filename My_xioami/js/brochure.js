@@ -216,15 +216,7 @@ var $box = (function () {
                     $scorll.style.position = 'fixed';
                     $scorll.style.top = window.innerHeight - 760 + 'px';
                     $scorll.style.zIndex = 999;
-                    // $scorll.style.display = 'block';
-                    // move($scorll, 'height', 79, 3000);
                 }
-                // else{
-                //     $scorll.style.position = 'absolute';
-                //     $scorll.style.top = 140 + 'px';
-                //     $scorll.style.zIndex = 1;
-                // }
-                // console.dir($yes);
             }
 
         }
