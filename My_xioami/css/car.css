@@ -46,7 +46,7 @@
     height: 505px;
     background: #f7f7f7 url(../images/carbg.png) no-repeat 130px center;
     position: relative;
-    display: none;
+    /* display: none; */
 }
 .box{
     position: absolute;
@@ -87,7 +87,7 @@
     position: relative;
     margin-top: 40px;
     margin-bottom: 60px;
-    /* display: none; */
+    display: none;
 }
 .main-header{
     background: #fff;

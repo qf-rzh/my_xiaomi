@@ -4,6 +4,8 @@ var $car = (function () {
     var div = JSON.stringify(id);
     var $three = document.querySelector('.three');
     var $jie = $three.lastElementChild;
+    // var $three = document.querySelector('.three');
+    var $one = document.querySelector('.one');
     return {
         init() {
             this.getJson();
@@ -18,33 +20,34 @@ var $car = (function () {
                 type: 'POST',
                 data: div,
                 success(data) {
+                    console.log($one);
                     var data = JSON.parse(data);
                     var data = data.data.id;
-                    // console.log(data[0].id);
-                    // console.log(data);
                     var flag = document.createDocumentFragment();
                     for (var i = 0; i < data.length; i++) {
                         var $div = document.createElement('div');
                         $div.innerHTML = `
                         <div class="main-body clearfix" >
-                            <div class="two two-check"><i style="display:block" class="iconfont icon-check"></i></div>
-                            <div class="two two-img"><img src="${data[i].site}"></div>
-                            <div class="two two-name">${data[i].name}${data[i].versions}</div>
-                            <div class="two two-price">${data[i].price}</div>
-                            <div class="two two-num">
-                                <div class="change">
-                                    <i class="iconfont icon-back"></i><input type="text" value="1">
-                                    <i class="iconfont icon-add"></i>
-                                </div>
-                            </div>
-                            <div class="two two-total">${data[i].price}元</div>
-                            <div class="two two-action"><i class="iconfont icon-roundclose"></i></div>
+                        <div class="two two-check"><i style="display:block" class="iconfont icon-check"></i></div>
+                        <div class="two two-img"><img src="${data[i].site}"></div>
+                        <div class="two two-name">${data[i].name}${data[i].versions}</div>
+                        <div class="two two-price">${data[i].price}</div>
+                        <div class="two two-num">
+                        <div class="change">
+                        <i class="iconfont icon-back"></i><input type="text" value="1">
+                        <i class="iconfont icon-add"></i>
+                        </div>
+                        </div>
+                        <div class="two two-total">${data[i].price}元</div>
+                        <div class="two two-action"><i class="iconfont icon-roundclose"></i></div>
                         </div>    
                         `
                         // $div.classList = 'main-body clearfix';
                         flag.appendChild($div);
                     }
                     $three.insertBefore(flag, $jie);
+                    $one.style.display = 'none';
+                    $three.style.display = 'block';
                     var $mainAll = document.querySelectorAll('.three .main-body');
                     var $input = document.querySelectorAll('.change input');
                     var $change = document.querySelectorAll('.change');
@@ -68,6 +71,10 @@ var $car = (function () {
                             if (bool) {
                                 $mainAll[index].style.display = 'none';
                                 localStorage.removeItem(data[index].id);
+                            }
+                            if(target.parentNode.parentNode.index === 0){
+                                $three.style.display = 'none';
+                                $one.style.display = 'block';
                             }
                         }
                     }
@@ -146,7 +153,6 @@ var $car = (function () {
                     }
                 }
             })
-            // console.log($two);
         },
         insertData() {
         }

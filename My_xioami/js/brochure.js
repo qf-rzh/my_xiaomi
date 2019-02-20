@@ -183,7 +183,6 @@ var $box = (function () {
                 $li.style.display = 'none';
             }
             $a.onclick = function () {
-                console.log($ban);
                 var json = {"versions": $ban};
                 sendAjax('php/cart.php', {
                     type: 'POST',
