@@ -17,7 +17,7 @@ var com = (function () {
                 window.onscroll = function()
                 {
                     var s = document.body.scrollTop || document.documentElement.scrollTop
-                    if(s>H) {
+                    if(s>H + 64) {
                         $newHead.style = "position:fixed;top:0;"
                     } else {
                         $newHead.style = "";
