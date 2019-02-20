@@ -126,6 +126,10 @@ li{
     justify-content: space-around;
     align-items: center;
 }
+/* .shangou_1 img{
+    width: 106px;
+    height: 142px;
+} */
 .main_shangou ul{
     display: flex;
     justify-content: space-between;
@@ -153,6 +157,25 @@ li{
     margin: 42px auto;
 }
 /* 手机 */
+.shouji_wrapper ul li a .evaluate{
+    display: block;
+    width: 234px;
+    height: 76px;
+    background: #ff6700;
+    position: absolute;
+    left: 0;
+    bottom: -76px;
+}
+.shouji_wrapper ul li a .evaluate p{
+    font-size: 12px;
+    color: #fff;
+    line-height: 18px;
+    margin: 7px 0;
+}
+.shouji_wrapper ul li a .evaluate span{
+    color: #ffc299;
+    font-size: 12px;
+}
 .main_shouji{
     padding-top: 40px;
     box-sizing: border-box;
@@ -210,7 +233,6 @@ li{
     margin: 30px auto 0;
 }
 .shouji_wrapper ul{
-    /* overflow: hidden; */
     float: left;
     display: flex;
     flex-direction: row;
@@ -221,11 +243,16 @@ li{
     width: 234px;
     height: 299px;
     background: #fff;
-    
+    position: relative;
+    overflow: hidden;
 }
 .shouji_wrapper ul li:hover{
-    margin-top: -2px;
+    margin-top: -5px;
     box-shadow: 0px 5px 20px #ccc;
+}
+.shouji_wrapper ul li:hover .evaluate{
+    transform: translateY(-76px);
+    transition: all 0.15s linear;
 }
 .shouji_wrapper ul li a{
     display:block;
@@ -235,8 +262,8 @@ li{
 }
 .shouji_wrapper ul li a img{
     display: block;
-    width: 105px;
-    height: 127px;
+    /* width: 105px; */
+    height: 142px;
 }
 .shouji_wrapper ul li a i{
     display: block;
@@ -297,13 +324,16 @@ li{
     width: 296px;
     height: 415px;
 }
+.main_reping ul li:hover{
+    margin-top: -5px;
+    box-shadow: 0px 5px 20px #ccc;
+}
 .main_reping ul li img{
     display: block;
     margin-block-end: 28px;
 }
 .main_reping ul li div{
     padding:0 28px;
-    /* overflow: hidden; */
 }
 .main_reping ul li div p{
     font-size: 12px;
@@ -360,7 +390,10 @@ li{
     padding-top: 50px;
     box-sizing: border-box;
 }
-
+._div:hover{
+    margin-top: -5px;
+    box-shadow: 0px 5px 20px #ccc;
+}
 ._div h4{
     font-size: 14px;
     color:#ffac13;
@@ -437,6 +470,10 @@ li{
     display: flex;
     flex-direction: column;
 }
+.main_shipin ul li:hover{
+    margin-top: -5px;
+    box-shadow: 0px 5px 20px #ccc;
+}
 .main_shipin ul li p{
     font-size: 12px;
     color: #333;
@@ -447,4 +484,10 @@ li{
     color: #b0b0b0;
     font-size: 12px;
     text-align: center;
+}
+/* 动画 */
+@keyframes go{
+    0%{
+
+    }
 }
