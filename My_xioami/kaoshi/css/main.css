@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+strong,b,h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+i,em{
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    width: 1226px;
+    margin: 0 auto;
+    /* background-color: #f5f5f5; */
+}
+#main_wrapper{
+    min-height: 586px;
+    background-color: #f5f5f5;
+    padding-bottom: 40px;
+}
+.shadow{
+    margin-top: -2px;
+    box-shadow: 0px 5px 20px #333;
+}
+
+/* 手机 */
+.shouji_wrapper ul li a .evaluate{
+    display: block;
+    width: 234px;
+    height: 76px;
+    background: #ff6700;
+    position: absolute;
+    left: 0;
+    bottom: -76px;
+}
+.shouji_wrapper ul li a .evaluate:hover{
+    cursor: pointer;
+}
+.shouji_wrapper ul li a .evaluate p{
+    font-size: 12px;
+    color: #fff;
+    line-height: 18px;
+    margin: 7px 0;
+}
+.shouji_wrapper ul li a .evaluate span{
+    color: #ffc299;
+    font-size: 12px;
+}
+.main_shouji{
+    padding-top: 40px;
+    box-sizing: border-box;
+    min-height: 856px;
+}
+.shouji_wrapper{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+.shouji_l{
+    width: 234px;
+    height: 614px;
+    background: #f5f5f5;
+    float: left;
+    margin-right: 14px;
+}
+.main_shouji p{
+    margin-bottom: 18px;
+}
+.main_shouji p a{
+    display: display;
+    float: right;
+    color: #424242;
+}
+
+
+.shouji_l a img{
+    display: block;
+    width: 210px;
+    height: 270px;
+    margin: 30px auto 0;
+}
+.shouji_l a img:hover{
+    margin-top: -5px;
+    box-shadow: 0px 5px 20px #ccc;
+}
+.shouji_wrapper ul{
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.shouji_wrapper ul li{
+    width: 234px;
+    height: 299px;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.shouji_wrapper ul li:hover{
+    transform: translateY(-5px);
+    transition: all 0.3s linear;
+    box-shadow: 0px 5px 20px #666;
+}
+.shouji_wrapper ul li:hover .evaluate{
+    transform: translateY(-76px);
+    transition: all 0.15s linear;
+}
+.shouji_wrapper ul li a{
+    display:block;
+    width: 234px;
+    height: 299px;
+    /* cursor: context-menu */
+}
+.shouji_wrapper ul li a img{
+    display: block;
+    /* width: 105px; */
+    height: 142px;
+}
+.shouji_wrapper ul li a i{
+    display: block;
+    background: #83c44e;
+    color: #fff;
+    font-size: 12px;
+    width:64px;
+    height: 20px;
+    margin: 0 auto 16px;
+    text-align: center;
+}
+.shouji_wrapper ul li a img{
+    display: block;
+    margin: 0 auto;
+}
+.shouji_wrapper ul li a p{
+    font-size: 14px;
+    color: #333;
+    margin-top: 32px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.shouji_wrapper ul li a span{
+    font-size: 12px;
+    color:#b0b0b0;
+    display: block;
+    text-align: center;
+}
+.shouji_wrapper ul li img{
+    width: 234px;
+    height: 299px;
+}
+.shouji_wrapper ul li a b{
+    display: block;
+    font-size: 14px;
+    color: #ff6700;
+    text-align: center;
+    margin-top: 16px;
+}
+.main_shouji .xiaomidianshi{
+    display: block;
+    width: 1226px;
+    height: 120px;
+    margin-top: 40px;
+}
+.shouji_wrapper ul li .first{
+    display: block;
+    width: 58px;
+    height: 18px;
+    background: #e53935;
+    color: #fff;
+}
+.shouji_wrapper ul .last_li{
+    background: #f5f5f5;
+}
+.shouji_wrapper ul .last_li .litop{
+    background: #fff;
+    display: block;
+    width: 234px;
+    height: 128px;
+    display: flex;
+    justify-content: space-around;
+}
+.shouji_wrapper ul .last_li .litop img{
+    display: block;
+    width: 64px;
+    height: 74px;
+    margin-top: 30px;
+}
+.shouji_wrapper ul .last_li:hover{
+    transform: translateY(0px);
+    box-shadow: none;
+}
+.shouji_wrapper ul .last_li .libottom{
+    background: #fff;
+    display: block;
+    width: 234px;
+    height: 128px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.shouji_wrapper ul .last_li .libottom img{
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-top: 40px;
+}
+.shouji_wrapper ul .last_li .litop div{
+    margin-left: 15px;
+}
+.shouji_wrapper ul .last_li .libottom div{
+    margin-left: 15px;
+}
+.shouji_wrapper ul .last_li .litop:hover{
+    transform: translateY(-5px);
+    transition: all 0.3s linear;
+    box-shadow: 0px 5px 20px #999;
+}
+.shouji_wrapper ul .last_li .libottom:hover{
+    transform: translateY(-5px);
+    transition: all 0.3s linear;
+    box-shadow: 0px 5px 20px #999;
+}

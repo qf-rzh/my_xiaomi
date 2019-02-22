@@ -1,0 +1,115 @@
+*{
+    margin: 0 ;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #999;
+}
+h1,h2,h3,h4,h5,h6,b,strong{
+    font-weight: normal;
+}
+#_ol {
+    position: absolute;
+    bottom: 10px;
+    left: 166px;
+}
+li{
+    list-style: none;
+}
+ol li {
+    width: 12px;
+    height: 6px;
+    background: #ccc;
+    border-radius: 3px;
+    text-align: center;
+    float: left;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.current {
+    background: #69a88f;
+}
+#main_wrapper{
+    width:397px;
+    height:448px;
+    background:#f2f2f2; 
+    margin: 0 auto; 
+    padding: 7px 7px 14px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+ #header{
+    background: #f7faf9;
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+#header h1{
+    font-size: 18px;
+    color: #69a88f;
+    line-height: 45px;
+}
+#header a{
+    font-size: 14px;
+    padding-right: 17px;
+    line-height: 45px;
+    background: url(../img/errow.jpg) no-repeat right center;
+}
+.bunner{
+    background: #fff;
+    position: relative;
+}
+.swiper-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.swiper-slide{
+    text-align: center;
+    width: 390px;
+    height: 367px;
+    display: block;
+    margin: 0 20px;
+}
+.swiper-slide img{
+    display: block;
+    width: 350px;
+    height: 150px;
+    margin: 15px auto 0;
+}
+.swiper-slide h2{
+    font-size: 18px;
+    margin: 15px auto 10px;
+}
+.swiper-slide p{
+    font-size: 14px;
+    color: #999;
+    line-height: 20px;
+}
+.lastimg{
+    display: flex;
+    margin: 0 auto;
+}
+.lastimg img{
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+.swiper-button-prev{
+    width: 24px;
+    height: 60px;
+    background: url(../img/index.png) no-repeat -82px -145px;
+    position: absolute;
+    top: 146px;
+    left: 0;
+}
+.swiper-button-next{
+    width: 24px;
+    height: 60px;
+    background: url(../img/index.png) no-repeat -121px -145px;
+    position: absolute;
+    top: 146px;
+    right: 0;
+}
