@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,html,ul,ol,dl,li,dt,dd,h1,h2,h3,h4,h5,h6,form,p,table,th,tr,td,input,textarea,select,legend,fieldest,img,p,button{
+	margin:0;
+	padding:0;	
+	}
+body{
+	width:100%;
+	font-size: 16px;
+}	
+h1,h2,h3,h4,h5,h6,b,strong{
+	font-weight:normal;	
+	font-size: 16px;
+	}
+i,em{
+	font-style:normal;	
+	}
+a{
+	text-decoration:none;
+	font-size:16px;	
+	}
+li{
+	list-style:none;	
+	}
+input{
+	outline:none;	
+	}
+.clearfix{
+	*zoom:1;	
+	}	
+.clearfix:after{
+	content:" ";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;	
+	}	

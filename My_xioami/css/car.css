@@ -1,0 +1,158 @@
+#header-wrapper{
+    height: 100px;
+    border-bottom: 2px solid #ff6700;
+}
+.header{
+    height: 100px;
+    line-height: 100px;
+}
+.header h1{
+    float: left;
+    width: 56px;
+    height: 56px;
+    margin-top: 25px;
+}
+.header h1 a{
+    display: block;
+    width: 56px;
+    height:56px;
+    background: url(../images/logo-footer.png) no-repeat;
+    text-indent: -9999px;
+}
+.header p{
+    float: left;
+    margin-left: 45px;
+    font-size: 30px;
+    color: #424242;
+}
+.login{
+    float:right;
+    height: 100px;
+}
+.login a{
+    color: #757575;
+    font-size: 12px;
+}
+#main-wrapper{
+    background: #f7f7f7;
+}
+.main{
+    min-height: 505px;
+    background: #f7f7f7;
+}
+.one{
+    width: 100%;
+    height: 505px;
+    background: #f7f7f7 url(../images/carbg.png) no-repeat 130px center;
+    position: relative;
+}
+.box{
+    position: absolute;
+    top: 160px;
+    left: 555px;
+}
+.box p{
+    font-size: 34px;
+    color: #b0b0b6;
+}
+.box span{
+    display: block;
+    height: 60px;
+    color: #b0b0b0;
+    font-size: 20px;
+    line-height: 60px;
+}
+.box a{
+    float: left;
+    margin-right: 13px;
+    width: 170px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border:1px solid #ff6700;
+    background: #ff6700;
+    color: white;
+    font-size: 12px;
+}
+.box a:last-child{
+    background: white;
+    color: #ff6700;
+}
+.list{
+    position: relative;
+    height: 1360px;
+    border-top: 1px solid #e0e0e0;
+}
+.list h3{
+    position: absolute;
+    font-size: 30px;
+    color: #757575;
+    background: #f7f7f7;
+    padding: 0 180px;
+    left: 380px;
+    top: -15px;
+}
+.list ul{
+    margin-top: 50px;
+}
+.list ul li{
+    width: 235px;
+    height: 300px;
+    background: #fff;
+    float: left;
+    margin-right: 12px;
+    margin-bottom: 15px;
+    text-align: center;
+    position: relative;
+}
+.list ul li:nth-child(5n){
+    margin-right: 0;
+}
+.list ul li dl dt{
+    text-align: center;
+}
+.list ul li dl dt a{
+    display: block;
+    width: 194px;
+    height: 200px;
+    padding:30px 20px;
+    box-sizing: border-box;
+    margin: 0 20px;
+}
+.list ul li dl dd{
+    height: 30px;
+    line-height: 30px;
+}
+.list ul li dl dd:first-of-type a{
+    font-size: 12px;
+    color: #333;
+}
+.list ul li dl dd:nth-of-type(2){
+    color: #ff6700;
+}
+.list ul li dl dd:nth-of-type(3) span{
+    font-size: 12px;
+    color: #757575;
+}
+.list ul li dl dd:nth-of-type(3) a{
+    position: absolute;
+    left: 60px;
+    bottom: 10px;
+    display: none;
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    border:1px solid #ff6700;
+    color: #ff6700;
+}
+.list ul li:hover dl dd:nth-of-type(3) a{
+    display: block;
+}
+.list ul li:hover dl dd:nth-of-type(3) span{
+    display: none;
+}
+.list ul li dl dd:nth-of-type(3) a:hover{
+    background-color: #ff6700;
+    color: #fff;
+}
